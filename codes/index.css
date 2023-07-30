@@ -1,0 +1,128 @@
+:root{
+    display: flex;
+    justify-content: center;
+    background-color:hsl(220, 21%, 11%);
+}
+
+.page_wrap {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(220, 21%, 11%);
+    width: 1440px;
+    height: 90vh;
+}
+
+.advice_frame{
+    display: flex;
+    justify-content: center;
+    width: 35rem;
+    height: 21rem;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 20px;
+    margin-top: 20rem;
+    margin-bottom: 3rem;
+}
+
+.get_advice{
+    display: flex;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: #52ffa8;
+    position: absolute;
+    top: 39.5rem;    
+}
+
+@media only screen and (max-width: 960px){
+    .page_wrap{
+        display: flex;
+        justify-content: center;
+        width: 375px;
+        height: 100%;
+    }
+
+    .advice_frame{
+        display: flex;
+        justify-content: center;
+        width: 21rem;
+        margin-bottom: 6rem;
+        margin-top: 10rem;
+        height: 24rem;
+    }
+
+    .get_advice{
+        top: 32.5rem;
+    }
+}
+
+.dicebtn{
+    position: relative;
+    top: 1.25rem;
+}
+
+.get_advice:hover{
+    cursor: pointer;
+    animation: glow 1500ms infinite;
+}
+
+@keyframes glow {
+    0% {
+        background-color: #52ffa8;
+        box-shadow: 0 0 3px #52ffa8;
+    }
+    50% {box-shadow:0 0 40px #52ffa8;
+     background-color: #52ffa8;}
+    100% {
+        background-color: #52ffa8;
+        box-shadow:0 0 3px #52ffa8 ;
+    }
+}
+
+.divider_dkp {
+    position: absolute;
+    top: -4rem;
+}
+
+
+
+.divider_mobile{
+    display: none;
+}
+
+.advice_id{
+    position: absolute;
+    margin-top: 3rem;
+    letter-spacing: 1px;
+    color: #52ffa8;
+    font-weight: lighter;
+}
+
+.advice_text {
+    position: relative;
+    margin-top: 6rem;
+    font-size: 28px;
+    color: hsl(214, 51%, 92%);
+    letter-spacing: 1px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: 800;
+    text-align-last: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px){
+    .divider_dkp{
+        display: none;
+    }
+
+    .divider_mobile{
+        display: flex;
+        position: absolute;
+        top: -2.9rem;
+    }
+
+    .advice_text{
+        margin-top: 5rem;
+    }
+}
